@@ -1,0 +1,138 @@
+% 
+% This is a Demonstration Thesis with two co-advisors
+%
+
+% This starts the document; the "npsreport" style is really a modified
+% report style. Feel free to use the options:
+%
+% "twoside" - prints "THIS PAGE INTENTIONALLY LEFT BLANK" on
+%             odd-numbered pages at the end of sections.
+%
+% "traditional" - prints a ``traditional'' NPS thesis style, rather
+%                 than the new one.
+% "authorindex" - prints the author index
+
+
+% See also /opt/local/share/texmf-dist/tex/latex/base/report.cls
+
+
+\documentclass[twoside,thesis,twoadvisors]{npsreport} 
+
+%
+% Reference commands
+%
+
+% And here is the main thesis
+
+\title{Understanding the Military Father}
+\author{Leah Skywalker}
+\rank{Padawan, Jedi Academy}
+\prevdegrees{B.S., University of BS, 2100 }
+
+\degree{Master of Science in Force Studies}
+\degreeabbreviation{MS}
+\department{Department of Force Sciences}
+\thesisadvisorone{Obi-Wan Knobi}
+\thesisadvisortwo{R2D2}
+\secondreader{Anakin Skywalker}
+\departmentchair{Yoda (Frank Oz)}
+
+
+\degreedate{June 2104} 
+\distribution{Approved for public release; distribution is unlimited}
+\abstract{This thesis addresses the problem of having a father who is
+  in the military that tries to kill you, and the difficulty of being a twin separated at birth. }
+
+% Information for the SF298.
+% These are mandatory:
+\ReportType{Master's Thesis}
+\DatesCovered{2102-06-01---2104-10-31}
+\SponsoringAgency{Department of the Navy}
+\ReportClassification{Unclassified}
+\AbstractClassification{Unclassified}
+\PageClassification{Unclassified}
+
+% These are optional:
+\ContractNumber{}
+\GrantNumber{}
+\ProgramElementNumber{}
+\TaskNumber{}
+\WorkUnitNumber{}
+\POReportNumber{}
+\Acronyms{}
+\SMReportNumber{}
+\SupplementaryNotes{The views expressed in this thesis are those of
+  the author and do not reflect the official policy or position of the
+Department of Defense or the U.S. Government.  IRB Protocol number XXX.}
+\SubjectTerms{}
+\ResponsiblePerson{}
+\RPTelephone{}
+
+%
+% your thesis begins here
+%
+
+\begin{document}
+
+\NPScover                       % Cover
+\NPSsftne                       % SF298
+\NPSthesistitle                 % Title page
+\NPSabstractpage                % Abstract Page
+\NPSfrontmatter                 % NPS front matter follows
+
+% This changes the chaptermark and includes the various tables
+
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername}\ \thechapter.\ #1}{}}
+\NPStableOfContents
+\NPSlistOfFigures
+\NPSlistOfTables
+
+% I put the acknowledgements here
+\NPSacknowledgements{
+  I want to thank everybody who helped me get to where I am today.
+}
+
+% NPS body follows
+
+\NPSbody
+
+\chapter{Twin Studies}
+
+If you got this far, then the front mater works.
+% This is the official end of the thesis
+
+\NPSappendix                   % Appendices follow
+\chapter{[APPENDEX NAME]}
+[APPENDEX BODY]
+
+
+
+\NPSend         
+
+% This is the official distribution list.
+% Free free to comment out or add your own
+% The list is automatically properly numbered.
+
+\chapter*{Initial Distribution List}
+\singlespace
+\begin{enumerate}
+\item Defense Technical Information Center\\Ft. Belvoir, Virginia
+\item Dudly Knox Library\\Naval Postgraduate School\\Monterey, California
+\item Marine Corps Representative\\Naval Postgraduate School\\Monterey, California
+\item Directory, Training and Education, MCCDC, Code C46\\Quantico, Virginia
+\item Marine Corps Tactical System Support Activity (Attn: Operations
+  Officer)\\Camp Pendleton, California
+\textit{Officer students in the Operations Research Program are also required
+to show:}
+
+\item Director, Studies and Analysis Division, MCCDC, Code C45\\
+Quantico, Virginia
+
+\textit{Officer students in the Space Ops/Space Engineering Program or in the
+Information Warfare/Information Systems and Operations are also
+required to show:}
+
+\item Head, Information Operations and Space Integration Branch,\\
+PLI/PP\&O/HQMC, Washington, DC
+\end{enumerate}
+\end{document}
