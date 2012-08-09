@@ -1,47 +1,27 @@
 % 
-% This is a Demonstration Thesis with two co-advisors
+% This is Rick Battle's Masters Thesis
 %
-
-% This starts the document; the "npsreport" style is really a modified
-% report style. Feel free to use the options:
-%
-% "twoside" - prints "THIS PAGE INTENTIONALLY LEFT BLANK" on
-%             odd-numbered pages at the end of sections.
-%
-% "traditional" - prints a ``traditional'' NPS thesis style, rather
-%                 than the new one.
-% "authorindex" - prints the author index
-
-
-% See also /opt/local/share/texmf-dist/tex/latex/base/report.cls
-
 
 \documentclass[twoside,thesis,twoadvisors]{npsreport} 
 
-%
-% Reference commands
-%
+% Title Page
 
-% And here is the main thesis
+\title{Thrashing and Locality in Modern Linux Systems}
+\author{Rick Battle}
+\rank{LTJG, USN}
+\prevdegrees{B.S. Computer Engineering, Virginia Tech, 2009 }
 
-\title{Understanding the Military Father}
-\author{Leah Skywalker}
-\rank{Padawan, Jedi Academy}
-\prevdegrees{B.S., University of BS, 2100 }
-
-\degree{Master of Science in Force Studies}
+\degree{Master of Science in Computer Science}
 \degreeabbreviation{MS}
-\department{Department of Force Sciences}
-\thesisadvisorone{Obi-Wan Knobi}
-\thesisadvisortwo{R2D2}
-\secondreader{Anakin Skywalker}
-\departmentchair{Yoda (Frank Oz)}
+\department{Department of Computer Science}
+\thesisadvisorone{Dr. Peter Denning}
+\thesisadvisortwo{Dr. Craig Martell}
+\departmentchair{Dr. Peter Denning}
 
 
-\degreedate{June 2104} 
+\degreedate{September 2013} 
 \distribution{Approved for public release; distribution is unlimited}
-\abstract{This thesis addresses the problem of having a father who is
-  in the military that tries to kill you, and the difficulty of being a twin separated at birth. }
+\abstract{This thesis is an exploration of the need for thrashing prevention techniques in the modern Linux Kernel in light of large scale systems. }
 
 % Information for the SF298.
 % These are mandatory:
@@ -96,16 +76,41 @@ Department of Defense or the U.S. Government.  IRB Protocol number XXX.}
 
 \NPSbody
 
-\chapter{Twin Studies}
+\chapter{Introduction to Thrashing and Locality}
 
 If you got this far, then the front mater works.
+
+\chapter{Prior and Related Work}
+Prior Work
+
+\chapter{Thrashing, Locality, and Implemnting Working Set}
+Methodology
+
+\section{Demonstration of Thrashing}
+Induced thrashing
+
+\section{Demonstration of Temporal Locality}
+Graphed memory usage patterns to demonstrate temporal locality.
+
+\section{Implemntation of a Locally Controlled Working Set Policy}
+Kernel hacking!!!
+
+\chapter{Performance Measurements of the Locally Controlled Working Set Policy}
+Graphs!!!
+
+\chapter{Conclusions and Recommendations}
+It Works!
+
+\chapter{Future Work}
+Long term maintenance.
+
 % This is the official end of the thesis
 
-\NPSappendix                   % Appendices follow
-\chapter{[APPENDEX NAME]}
-[APPENDEX BODY]
+% Appendices follow
 
-
+%\NPSappendix
+%\chapter{[APPENDEX NAME]}
+%[APPENDEX BODY]
 
 \NPSend         
 
